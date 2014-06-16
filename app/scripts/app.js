@@ -4,5 +4,6 @@ angular
   .module('ccappApp', [
     'ngCookies',
     'ngResource',
-    'ngSanitize'
+    'ngSanitize',
+    'google-maps'
   ]);
