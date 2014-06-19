@@ -43,6 +43,7 @@ public class App {
 				d.setSiteNumber(row[SITE_NUMBER]);
 				d.setLatitude(row[LATITUDE]);
 				d.setLongitude(row[LONGITUDE]);
+				d.setIcon("images/"+ row[YEAR]+".png");
 				data.add(d);
 			}
 			

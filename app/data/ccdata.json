@@ -4,118 +4,135 @@
     "siteName": "Loon Island",
     "siteNumber": "28",
     "latitude": "43.905984",
-    "longitude": "-74.946327"
+    "longitude": "-74.946327",
+    "icon": "images/1998.jpg"
   },
   {
     "year": "1999",
     "siteName": "Hickey Camp",
     "siteNumber": "0",
     "latitude": "42.409515",
-    "longitude": "-77.421373"
+    "longitude": "-77.421373",
+    "icon": "images/1999.jpg"
   },
   {
     "year": "2000",
     "siteName": "Island 2 North",
     "siteNumber": "42",
     "latitude": "43.864661",
-    "longitude": "-75.00349"
+    "longitude": "-75.00349",
+    "icon": "images/2000.jpg"
   },
   {
     "year": "2001",
     "siteName": "Overflow/Moss Lake",
     "siteNumber": "0",
     "latitude": "43.788781",
-    "longitude": "-74.843237"
+    "longitude": "-74.843237",
+    "icon": "images/2001.jpg"
   },
   {
     "year": "2002",
     "siteName": "Melody Island",
     "siteNumber": "39",
-    "latitude": "43.864661",
-    "longitude": "-75.00349"
+    "latitude": "43.870107",
+    "longitude": "-74.992547",
+    "icon": "images/2002.jpg"
   },
   {
     "year": "2003",
     "siteName": "Kettle Hole",
     "siteNumber": "1",
     "latitude": "43.911178",
-    "longitude": "-75.037994"
+    "longitude": "-75.037994",
+    "icon": "images/2003.jpg"
   },
   {
     "year": "2004",
     "siteName": "Island 2 North",
     "siteNumber": "42",
     "latitude": "43.864661",
-    "longitude": "-75.00349"
+    "longitude": "-75.00349",
+    "icon": "images/2004.jpg"
   },
   {
     "year": "2005",
     "siteName": "Melody Island",
     "siteNumber": "39",
-    "latitude": "43.864661",
-    "longitude": "-75.00349"
+    "latitude": "43.870107",
+    "longitude": "-74.992547",
+    "icon": "images/2005.jpg"
   },
   {
     "year": "2006",
     "siteName": "The Lagoon/Evergreen Landing",
     "siteNumber": "2",
     "latitude": "43.904072",
-    "longitude": "-75.027866"
+    "longitude": "-75.027866",
+    "icon": "images/2006.jpg"
   },
   {
     "year": "2007",
     "siteName": "Melody Island",
     "siteNumber": "39",
-    "latitude": "43.864661",
-    "longitude": "-75.00349"
+    "latitude": "43.870107",
+    "longitude": "-74.992547",
+    "icon": "images/2007.jpg"
   },
   {
     "year": "2008",
     "siteName": "Island 2 North",
     "siteNumber": "42",
     "latitude": "43.864661",
-    "longitude": "-75.00349"
+    "longitude": "-75.00349",
+    "icon": "images/2008.jpg"
   },
   {
     "year": "2009",
     "siteName": "Compound",
     "siteNumber": "0",
     "latitude": "43.896677",
-    "longitude": "-75.054989"
+    "longitude": "-75.054989",
+    "icon": "images/2009.jpg"
   },
   {
     "year": "2010",
     "siteName": "Compound",
     "siteNumber": "0",
     "latitude": "43.896677",
-    "longitude": "-75.054989"
+    "longitude": "-75.054989",
+    "icon": "images/2010.jpg"
   },
   {
     "year": "2011",
     "siteName": "Compound",
     "siteNumber": "0",
     "latitude": "43.896677",
-    "longitude": "-75.054989"
+    "longitude": "-75.054989",
+    "icon": "images/2011.jpg"
   },
   {
     "year": "2012",
     "siteName": "Tower Trail",
     "siteNumber": "44",
     "latitude": "43.864821",
-    "longitude": "-75.007524"
+    "longitude": "-75.007524",
+    "icon": "images/2012.jpg"
   },
   {
     "year": "2013",
     "siteName": "Tower Trail",
     "siteNumber": "44",
     "latitude": "43.864821",
-    "longitude": "-75.007524"
+    "longitude": "-75.007524",
+    "icon": "images/2013.jpg"
   },
   {
     "year": "2014",
     "siteName": "Fishers Farm",
     "siteNumber": "0",
     "latitude": "41.33887",
-    "longitude": "-79.482372"
+    "longitude": "-79.482372",
+    "icon": "images/2014.jpg"
   }
 ]

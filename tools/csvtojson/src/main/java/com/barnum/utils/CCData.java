@@ -7,6 +7,7 @@ public class CCData {
 	private String siteNumber;
 	private String latitude;
 	private String longitude;
+	private String icon;
 	
 	public String getYear() {
 		return year;
@@ -19,6 +20,12 @@ public class CCData {
 	}
 	public void setSiteName(String siteName) {
 		this.siteName = siteName;
+	}
+	public String getIcon() {
+		return icon;
+	}
+	public void setIcon(String i) {
+		this.icon = i;
 	}
 	public String getSiteNumber() {
 		return siteNumber;
