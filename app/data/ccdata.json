@@ -5,7 +5,7 @@
     "siteNumber": "28",
     "latitude": "43.905984",
     "longitude": "-74.946327",
-    "icon": "images/1998.jpg"
+    "icon": ["images/1998.jpg"]
   },
   {
     "year": "1999",
@@ -13,7 +13,7 @@
     "siteNumber": "0",
     "latitude": "42.409515",
     "longitude": "-77.421373",
-    "icon": "images/1999.jpg"
+    "icon": ["images/1999.jpg"]
   },
   {
     "year": "2000",
@@ -21,7 +21,7 @@
     "siteNumber": "42",
     "latitude": "43.864661",
     "longitude": "-75.00349",
-    "icon": "images/2000.jpg"
+    "icon": ["images/2000.jpg"]
   },
   {
     "year": "2001",
@@ -29,7 +29,7 @@
     "siteNumber": "0",
     "latitude": "43.788781",
     "longitude": "-74.843237",
-    "icon": "images/2001.jpg"
+    "icon": ["images/2001.jpg"]
   },
   {
     "year": "2002",
@@ -37,7 +37,7 @@
     "siteNumber": "39",
     "latitude": "43.870107",
     "longitude": "-74.992547",
-    "icon": "images/2002.jpg"
+    "icon": ["images/2002.jpg"]
   },
   {
     "year": "2003",
@@ -45,7 +45,7 @@
     "siteNumber": "1",
     "latitude": "43.911178",
     "longitude": "-75.037994",
-    "icon": "images/2003.jpg"
+    "icon": ["images/2003.jpg"]
   },
   {
     "year": "2004",
@@ -53,7 +53,7 @@
     "siteNumber": "42",
     "latitude": "43.864661",
     "longitude": "-75.00349",
-    "icon": "images/2004.jpg"
+    "icon": ["images/2004.jpg"]
   },
   {
     "year": "2005",
@@ -61,7 +61,7 @@
     "siteNumber": "39",
     "latitude": "43.870107",
     "longitude": "-74.992547",
-    "icon": "images/2005.jpg"
+    "icon": ["images/2005.jpg"]
   },
   {
     "year": "2006",
@@ -69,7 +69,7 @@
     "siteNumber": "2",
     "latitude": "43.904072",
     "longitude": "-75.027866",
-    "icon": "images/2006.jpg"
+    "icon": ["images/2006.jpg"]
   },
   {
     "year": "2007",
@@ -77,7 +77,7 @@
     "siteNumber": "39",
     "latitude": "43.870107",
     "longitude": "-74.992547",
-    "icon": "images/2007.jpg"
+    "icon": ["images/2007.jpg"]
   },
   {
     "year": "2008",
@@ -85,7 +85,7 @@
     "siteNumber": "42",
     "latitude": "43.864661",
     "longitude": "-75.00349",
-    "icon": "images/2008.jpg"
+    "icon": ["images/2008.jpg"]
   },
   {
     "year": "2009",
@@ -93,23 +93,23 @@
     "siteNumber": "0",
     "latitude": "43.896677",
     "longitude": "-75.054989",
-    "icon": "images/2009.jpg"
+    "icon": ["images/2009.jpg"]
   },
   {
     "year": "2010",
     "siteName": "Compound",
     "siteNumber": "0",
-    "latitude": "43.896677",
-    "longitude": "-75.054989",
-    "icon": "images/2010.jpg"
+    "latitude": "43.896699",
+    "longitude": "-75.054538",
+    "icon": ["images/2010.jpg"]
   },
   {
     "year": "2011",
     "siteName": "Compound",
     "siteNumber": "0",
-    "latitude": "43.896677",
-    "longitude": "-75.054989",
-    "icon": "images/2011.jpg"
+    "latitude": "43.896620",
+    "longitude": "-75.053701",
+    "icon": ["images/2011.jpg","images/2011-1.jpg"]
   },
   {
     "year": "2012",
@@ -117,15 +117,15 @@
     "siteNumber": "44",
     "latitude": "43.864821",
     "longitude": "-75.007524",
-    "icon": "images/2012.jpg"
+    "icon": ["images/2012.jpg"]
   },
   {
     "year": "2013",
     "siteName": "Tower Trail",
     "siteNumber": "44",
-    "latitude": "43.864821",
-    "longitude": "-75.007524",
-    "icon": "images/2013.jpg"
+    "latitude": "43.864414",
+    "longitude": "-75.006838",
+    "icon": ["images/2013.jpg","images/2013-2.jpg"]
   },
   {
     "year": "2014",

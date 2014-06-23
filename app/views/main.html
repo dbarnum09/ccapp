@@ -1,19 +1,9 @@
 <div>
 
-    <google-map center="map.center" pan="true" draggable="true" zoom="map.zoom">
-        <markers models="mapdata.sites" idKey="'year'" coords="'coords'" labelContent="'siteNumber'" click="'onPinClick'">
-            <window
-                    show="'showwindow'"
-                    templateUrl="views/window.html"
-                    isIconVisibleOnClick="true"
-                    options="options"
-                    closeClick="'onClickClose'">
-            </window>
+    <google-map center="map.center" pan="true" draggable="true" zoom="map.zoom" >
+        <markers models="mapdata.sites" idKey="'year'" coords="'coords'" labelContent="'siteName'" click="'onPinClick'">
+            <windows ng-cloak  show="'showwindow'" isIconVisibleOnClick="true" closeClick="'onInfoWindowClosed'" templateUrl="'template'" templateParameter="'siteName'">
+            </windows>
         </markers>
     </google-map>
-</div>
-<div class="row">
-    <div class="col-xs-12">
-        <img width="25" height="25" src="images/2014.jpg"/>
-    </div>
 </div>

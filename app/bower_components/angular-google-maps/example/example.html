@@ -94,7 +94,7 @@
                     <div ng-controller='InfoController'>
                         <a class="btn" ng-click="clickedButtonInWindow()">CLICK ME</a>
                     </div>
-                    <p ng-non-bindable >This is an info window at {{ latitude | number:4 }}, {{ longitude | number:4 }}!</p>
+                    <p ng-non-bindable >WINDOWS-----------This is an info window at {{ latitude | number:4 }}, {{ longitude | number:4 }}!</p>
 
                     <p class="muted">My marker will stay open when the window is popped up!</p>
                 </div>
@@ -149,6 +149,8 @@
 		<!-- polyline example -->
         <polyline ng-repeat="p in map.polylines" path="p.path" stroke="p.stroke" visible='p.visible'
             geodesic='p.geodesic' fit="false" editable="p.editable" draggable="p.draggable" icons='p.icons'></polyline>
+
+
 
         <!-- polygon example -->
         <polygon static="true" ng-repeat="p in map.polygons track by p.id" path="p.path" stroke="p.stroke" visible="p.visible"

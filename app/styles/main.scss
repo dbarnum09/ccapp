@@ -6,7 +6,11 @@ $icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/
 @import "../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap.scss";
 // endbower
 
-
+.cc-logo {
+  width:25px;
+  height:25px;
+  margin: 5px;
+}
 .angular-google-map-container {
   height: 1000px;
 }
