@@ -7,7 +7,9 @@ public class CCData {
 	private String siteNumber;
 	private String latitude;
 	private String longitude;
-	private String icon;
+	private String[] icon;
+	private String numberOfIcons;
+	private String fbLink;
 	
 	public String getYear() {
 		return year;
@@ -21,10 +23,10 @@ public class CCData {
 	public void setSiteName(String siteName) {
 		this.siteName = siteName;
 	}
-	public String getIcon() {
+	public String[] getIcon() {
 		return icon;
 	}
-	public void setIcon(String i) {
+	public void setIcon(String[] i) {
 		this.icon = i;
 	}
 	public String getSiteNumber() {
@@ -44,6 +46,18 @@ public class CCData {
 	}
 	public void setLongitude(String longitude) {
 		this.longitude = longitude;
+	}
+	public String getNumberOfIcons() {
+		return numberOfIcons;
+	}
+	public void setNumberOfIcons(String numberOfIcons) {
+		this.numberOfIcons = numberOfIcons;
+	}
+	public String getFbLink() {
+		return fbLink;
+	}
+	public void setFbLink(String fbLink) {
+		this.fbLink = fbLink;
 	}
 	
 

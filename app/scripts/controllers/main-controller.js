@@ -18,10 +18,10 @@ angular.module('ccappApp')
 
         $scope.map = {
             center: {
-                latitude: 43.898184,
-                longitude: -75.051124
+                latitude: 37.898184,
+                longitude: -80.051124
             },
-            zoom: 13
+            zoom: 5
         };
         $http.get('data/ccdata.json').success(function(data) {
 

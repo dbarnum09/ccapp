@@ -26,6 +26,8 @@ public class App {
 	public static int SITE_NUMBER = 3;
 	public static int LATITUDE = 4;
 	public static int LONGITUDE = 5;
+	public static int NUMBER_ICONS = 6;
+	public static int FB_LINK=7;
 
 	public static void main(String[] args) {
 
@@ -43,7 +45,21 @@ public class App {
 				d.setSiteNumber(row[SITE_NUMBER]);
 				d.setLatitude(row[LATITUDE]);
 				d.setLongitude(row[LONGITUDE]);
-				d.setIcon("images/"+ row[YEAR]+".png");
+				d.setFbLink(row[FB_LINK]);
+				int numberOfIcons =Integer.parseInt(row[NUMBER_ICONS]);
+				//naming scheme is
+				ArrayList<String> icons = new ArrayList<String>();
+				//add the first icon they all have this 
+				icons.add("images/"+ row[YEAR]+".jpg");
+				if (numberOfIcons >1) {
+					for (int ii=1; ii< numberOfIcons; ii++) {
+						icons.add("images/"+row[YEAR]+"-"+Integer.toString(ii)+".jpg");
+					}
+				}
+				d.setIcon(icons.toArray(new String[icons.size()]));
+				
+				
+				
 				data.add(d);
 			}
 			

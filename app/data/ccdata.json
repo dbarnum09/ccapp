@@ -5,7 +5,10 @@
     "siteNumber": "28",
     "latitude": "43.905984",
     "longitude": "-74.946327",
-    "icon": ["images/1998.jpg"]
+    "icon": [
+      "images/1998.jpg"
+    ],
+    "fbLink": "https://www.facebook.com/media/set/?set\u003doa.567143170065126\u0026type\u003d1"
   },
   {
     "year": "1999",
@@ -13,7 +16,10 @@
     "siteNumber": "0",
     "latitude": "42.409515",
     "longitude": "-77.421373",
-    "icon": ["images/1999.jpg"]
+    "icon": [
+      "images/1999.jpg"
+    ],
+    "fbLink": "https://www.facebook.com/media/set/?set\u003doa.567143170065126\u0026type\u003d1"
   },
   {
     "year": "2000",
@@ -21,7 +27,10 @@
     "siteNumber": "42",
     "latitude": "43.864661",
     "longitude": "-75.00349",
-    "icon": ["images/2000.jpg"]
+    "icon": [
+      "images/2000.jpg"
+    ],
+    "fbLink": "https://www.facebook.com/media/set/?set\u003doa.566180903494686\u0026type\u003d1"
   },
   {
     "year": "2001",
@@ -29,15 +38,21 @@
     "siteNumber": "0",
     "latitude": "43.788781",
     "longitude": "-74.843237",
-    "icon": ["images/2001.jpg"]
+    "icon": [
+      "images/2001.jpg"
+    ],
+    "fbLink": "https://www.facebook.com/media/set/?set\u003doa.559542007491909\u0026type\u003d1"
   },
   {
     "year": "2002",
     "siteName": "Melody Island",
     "siteNumber": "39",
-    "latitude": "43.870142",
-    "longitude": "-74.993105",
-    "icon": ["images/2002.jpg"]
+    "latitude": "43.870107",
+    "longitude": "-74.992547",
+    "icon": [
+      "images/2002.jpg"
+    ],
+    "fbLink": "https://www.facebook.com/media/set/?set\u003doa.567143170065126\u0026type\u003d1"
   },
   {
     "year": "2003",
@@ -45,7 +60,10 @@
     "siteNumber": "1",
     "latitude": "43.911178",
     "longitude": "-75.037994",
-    "icon": ["images/2003.jpg"]
+    "icon": [
+      "images/2003.jpg"
+    ],
+    "fbLink": "https://www.facebook.com/media/set/?set\u003doa.567143170065126\u0026type\u003d1"
   },
   {
     "year": "2004",
@@ -53,7 +71,10 @@
     "siteNumber": "42",
     "latitude": "43.864661",
     "longitude": "-75.00349",
-    "icon": ["images/2004.jpg"]
+    "icon": [
+      "images/2004.jpg"
+    ],
+    "fbLink": "https://www.facebook.com/media/set/?set\u003doa.565883533524423\u0026type\u003d1"
   },
   {
     "year": "2005",
@@ -61,7 +82,10 @@
     "siteNumber": "39",
     "latitude": "43.870142",
     "longitude": "-74.992375",
-    "icon": ["images/2005.jpg"]
+    "icon": [
+      "images/2005.jpg"
+    ],
+    "fbLink": "https://www.facebook.com/media/set/?set\u003doa.565899623522814\u0026type\u003d1"
   },
   {
     "year": "2006",
@@ -69,7 +93,10 @@
     "siteNumber": "2",
     "latitude": "43.904072",
     "longitude": "-75.027866",
-    "icon": ["images/2006.jpg"]
+    "icon": [
+      "images/2006.jpg"
+    ],
+    "fbLink": "https://www.facebook.com/media/set/?set\u003doa.566281453484631\u0026type\u003d1"
   },
   {
     "year": "2007",
@@ -77,7 +104,10 @@
     "siteNumber": "39",
     "latitude": "43.870204",
     "longitude": "-74.991646",
-    "icon": ["images/2007.jpg"]
+    "icon": [
+      "images/2007.jpg"
+    ],
+    "fbLink": "https://www.facebook.com/media/set/?set\u003doa.566280706818039\u0026type\u003d1"
   },
   {
     "year": "2008",
@@ -85,7 +115,10 @@
     "siteNumber": "42",
     "latitude": "43.864661",
     "longitude": "-75.00349",
-    "icon": ["images/2008.jpg"]
+    "icon": [
+      "images/2008.jpg"
+    ],
+    "fbLink": "https://www.facebook.com/media/set/?set\u003doa.566280473484729\u0026type\u003d1"
   },
   {
     "year": "2009",
@@ -93,7 +126,10 @@
     "siteNumber": "0",
     "latitude": "43.896677",
     "longitude": "-75.054989",
-    "icon": ["images/2009.jpg"]
+    "icon": [
+      "images/2009.jpg"
+    ],
+    "fbLink": "https://www.facebook.com/media/set/?set\u003doa.566252466820863\u0026type\u003d1"
   },
   {
     "year": "2010",
@@ -101,15 +137,22 @@
     "siteNumber": "0",
     "latitude": "43.896699",
     "longitude": "-75.054538",
-    "icon": ["images/2010.jpg"]
+    "icon": [
+      "images/2010.jpg"
+    ],
+    "fbLink": "https://www.facebook.com/media/set/?set\u003doa.560088157437294\u0026type\u003d1"
   },
   {
     "year": "2011",
     "siteName": "Compound",
     "siteNumber": "0",
-    "latitude": "43.896620",
+    "latitude": "43.89662",
     "longitude": "-75.053701",
-    "icon": ["images/2011.jpg","images/2011-1.jpg"]
+    "icon": [
+      "images/2011.jpg",
+      "images/2011-1.jpg"
+    ],
+    "fbLink": "https://www.facebook.com/media/set/?set\u003doa.566280306818079\u0026type\u003d1"
   },
   {
     "year": "2012",
@@ -117,7 +160,11 @@
     "siteNumber": "44",
     "latitude": "43.864821",
     "longitude": "-75.007524",
-    "icon": ["images/2012.jpg"]
+    "icon": [
+      "images/2012.jpg",
+      "images/2012-1.jpg"
+    ],
+    "fbLink": "https://www.facebook.com/media/set/?set\u003doa.560086694104107\u0026type\u003d1"
   },
   {
     "year": "2013",
@@ -125,7 +172,11 @@
     "siteNumber": "44",
     "latitude": "43.864414",
     "longitude": "-75.006838",
-    "icon": ["images/2013.jpg","images/2013-2.jpg"]
+    "icon": [
+      "images/2013.jpg",
+      "images/2013-1.jpg"
+    ],
+    "fbLink": "https://www.facebook.com/media/set/?set\u003doa.566261786819931\u0026type\u003d1"
   },
   {
     "year": "2014",
@@ -133,6 +184,9 @@
     "siteNumber": "0",
     "latitude": "41.33887",
     "longitude": "-79.482372",
-    "icon": "images/2014.jpg"
+    "icon": [
+      "images/2014.jpg"
+    ],
+    "fbLink": "https://www.facebook.com/media/set/?set\u003doa.568656056580504\u0026type\u003d1"
   }
 ]
