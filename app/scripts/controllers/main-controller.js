@@ -46,4 +46,11 @@ angular.module('ccappApp')
             $log.log('onClickClose()');
         }
 
+        $http.get('http://www.ncdc.noaa.gov/cdo-web/api/v2/data?datasetid=GHCND&stationid=GHCND:USC00308248&startdate=2010-08-11&enddate=2010-08-13',{headers:{token:'pupUaUEQCktIsCLddMMLRLrAoSNoNlpi'}}).success(function(data) {
+              $log.log('Data:' + JSON.stringify(data));
+        }).error(function(error) {
+            $log.log('Error:' + JSON.stringify(error));
+        });
+
+
     });
