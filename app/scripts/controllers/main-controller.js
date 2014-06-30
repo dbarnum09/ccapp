@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('ccappApp')
-    .controller('MainCtrl', function ($scope,$http,$log) {
+    .controller('MainCtrl', function ($scope,$http,$log,Noaa) {
         $scope.mapdata = {sites:[]};
 
         var onPinClick = function() {
@@ -45,12 +45,20 @@ angular.module('ccappApp')
         $scope.onClickClose = function(event) {
             $log.log('onClickClose()');
         }
-
-        $http.get('http://www.ncdc.noaa.gov/cdo-web/api/v2/data?datasetid=GHCND&stationid=GHCND:USC00308248&startdate=2010-08-11&enddate=2010-08-13',{headers:{token:'pupUaUEQCktIsCLddMMLRLrAoSNoNlpi'}}).success(function(data) {
-              $log.log('Data:' + JSON.stringify(data));
+        ////YYYY-MM-DD
+        var sd = '2014-01-01';
+        var end = '2014-01-02';
+        Noaa.getData(sd,end).success(function(data) {
+            $log.log('data: ' + JSON.stringify(data));
         }).error(function(error) {
-            $log.log('Error:' + JSON.stringify(error));
+            $log.log('error: ' + error);
         });
+
+//        $http.get('http://www.ncdc.noaa.gov/cdo-web/api/v2/data?datasetid=GHCND&stationid=GHCND:USC00308248&startdate=2010-08-11&enddate=2010-08-13',{headers:{token:'pupUaUEQCktIsCLddMMLRLrAoSNoNlpi'}}).success(function(data) {
+//              $log.log('Data:' + JSON.stringify(data));
+//        }).error(function(error) {
+//            $log.log('Error:' + JSON.stringify(error));
+//        });
 
 
     });
