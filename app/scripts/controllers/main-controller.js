@@ -48,10 +48,8 @@ angular.module('ccappApp')
         ////YYYY-MM-DD
         var sd = '2014-01-01';
         var end = '2014-01-02';
-        Noaa.getData(sd,end).success(function(data) {
+        Noaa.getData(sd,end).then(function(data) {
             $log.log('data: ' + JSON.stringify(data));
-        }).error(function(error) {
-            $log.log('error: ' + error);
         });
 
 //        $http.get('http://www.ncdc.noaa.gov/cdo-web/api/v2/data?datasetid=GHCND&stationid=GHCND:USC00308248&startdate=2010-08-11&enddate=2010-08-13',{headers:{token:'pupUaUEQCktIsCLddMMLRLrAoSNoNlpi'}}).success(function(data) {

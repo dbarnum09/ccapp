@@ -59,11 +59,14 @@
         <!--WINDOWS without markers-->
         <!--NOTICE THEY MUST BE PRIOR TO ANY MARKERS OR THEY WILL ATTACH THEMSELVES walking up the dom tree-->
         <window show="map.infoWindow.show" coords="map.infoWindow.coords" isIconVisibleOnClick="false" options="map.infoWindow.options"  ng-cloak>
-			<div ng-controller='InfoController'>
-			    I should not be attached to a
-            	marker.
-                <p>This is an info window at {{ m.latitude | number:4 }}, {{ m.longitude | number:4 }}!</p>
-	            <a class="btn" ng-click="clickedButtonInWindow()">CLICK ME</a>
+            <div>
+                <p>This is an info window at {{ map.infoWindow.coords.latitude | number:4 }}, {{ map.infoWindow.coords.longitude | number:4 }}!</p>
+                <div ng-controller='InfoController'>
+                    I should not be attached to a
+                    marker.
+
+                    <a class="btn" ng-click="clickedButtonInWindow()">CLICK ME</a>
+                </div>
             </div>
         </window>
 
@@ -94,7 +97,7 @@
                     <div ng-controller='InfoController'>
                         <a class="btn" ng-click="clickedButtonInWindow()">CLICK ME</a>
                     </div>
-                    <p ng-non-bindable >WINDOWS-----------This is an info window at {{ latitude | number:4 }}, {{ longitude | number:4 }}!</p>
+                    <p ng-non-bindable >This is an info window at {{ latitude | number:4 }}, {{ longitude | number:4 }}!</p>
 
                     <p class="muted">My marker will stay open when the window is popped up!</p>
                 </div>
@@ -149,8 +152,6 @@
 		<!-- polyline example -->
         <polyline ng-repeat="p in map.polylines" path="p.path" stroke="p.stroke" visible='p.visible'
             geodesic='p.geodesic' fit="false" editable="p.editable" draggable="p.draggable" icons='p.icons'></polyline>
-
-
 
         <!-- polygon example -->
         <polygon static="true" ng-repeat="p in map.polygons track by p.id" path="p.path" stroke="p.stroke" visible="p.visible"

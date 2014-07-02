@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('ccappApp')
-    .factory('Noaa', function Noaa($http,$q) {
+    .factory('Noaa', function Noaa($http,$q,$log) {
         //private functionality
         //http://www.ncdc.noaa.gov/cdo-web/api/v2/data?datasetid=GHCND&stationid=GHCND:USC00308248&startdate=2010-08-11&enddate=2010-08-13
         var deferred = $q.defer();
@@ -38,9 +38,10 @@ angular.module('ccappApp')
             getData:function(startdate,enddate) {
                 params.startdate = startdate;
                 params.enddate = enddate;
-
-                $http.get(url,config).success(processData);
-                return deferred.promise();
+                $http.get(url,config).success(processData).error(function(error) {
+                    $log.error(JSON.stringify(error));
+                });
+                return deferred.promise;
             }
         }
     });
