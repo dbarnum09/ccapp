@@ -59,11 +59,14 @@
         <!--WINDOWS without markers-->
         <!--NOTICE THEY MUST BE PRIOR TO ANY MARKERS OR THEY WILL ATTACH THEMSELVES walking up the dom tree-->
         <window show="map.infoWindow.show" coords="map.infoWindow.coords" isIconVisibleOnClick="false" options="map.infoWindow.options"  ng-cloak>
-			<div ng-controller='InfoController'>
-			    I should not be attached to a
-            	marker.
-                <p>This is an info window at {{ m.latitude | number:4 }}, {{ m.longitude | number:4 }}!</p>
-	            <a class="btn" ng-click="clickedButtonInWindow()">CLICK ME</a>
+            <div>
+                <p>This is an info window at {{ map.infoWindow.coords.latitude | number:4 }}, {{ map.infoWindow.coords.longitude | number:4 }}!</p>
+                <div ng-controller='InfoController'>
+                    I should not be attached to a
+                    marker.
+
+                    <a class="btn" ng-click="clickedButtonInWindow()">CLICK ME</a>
+                </div>
             </div>
         </window>
 
@@ -94,7 +97,7 @@
                     <div ng-controller='InfoController'>
                         <a class="btn" ng-click="clickedButtonInWindow()">CLICK ME</a>
                     </div>
-                    <p ng-non-bindable >WINDOWS-----------This is an info window at {{ latitude | number:4 }}, {{ longitude | number:4 }}!</p>
+                    <p ng-non-bindable >This is an info window at {{ latitude | number:4 }}, {{ longitude | number:4 }}!</p>
 
                     <p class="muted">My marker will stay open when the window is popped up!</p>
                 </div>
@@ -128,7 +131,7 @@
 
         <!-- predefined markers -->
         <!-- rendering via ng-repear, HIGH OVERHEAD via DOM Manipulation -->
-        <marker ng-repeat="m in map.markers" coords="m" icon="m.icon" click="onMarkerClicked(m)">
+        <marker ng-repeat="m in map.markers" coords="m" icon="m.icon" click="onMarkerClicked(m)" options="m.options">
             <marker-label content="m.title" anchor="22 0" class="marker-labels"/>
             <window ng-cloak  coords="map.infoWindowWithCustomClass.coords" isIconVisibleOnClick="false" options="map.infoWindowWithCustomClass.options">
                     <p>This is an info window at {{ m.latitude | number:4 }}, {{ m.longitude | number:4 }}!</p>
@@ -137,20 +140,19 @@
         </marker>
 
          <!--marker for clicked position can not put google.map.animations.BOUNCE , since it is not initiaized yet-->
-        <div ng-init="opts = {animation:1}">
+        <!-- DISABLED ANIMATION on MarkerLABEL due to Google SDK V3 bug, see MarkerLabelChildModel.setOption-->
+        <!--<div ng-init="opts = {animation:1}">-->
             <marker coords="map.clickedMarker" options="opts">
-                <!--<marker-label content="map.clickedMarker.title" anchor="24 40" class="marker-labels"/>-->
+                <marker-label content="map.clickedMarker.title" anchor="24 80" class="marker-labels"/>
                 <window isIconVisibleOnClick="true" options="map.infoWindowWithCustomClass.options">This is my clicked marker!
                     <p class="muted">My marker will reappear when you close me.</p>
                 </window>
             </marker>
-        </div>
+        <!--</div>-->
 
 		<!-- polyline example -->
         <polyline ng-repeat="p in map.polylines" path="p.path" stroke="p.stroke" visible='p.visible'
             geodesic='p.geodesic' fit="false" editable="p.editable" draggable="p.draggable" icons='p.icons'></polyline>
-
-
 
         <!-- polygon example -->
         <polygon static="true" ng-repeat="p in map.polygons track by p.id" path="p.path" stroke="p.stroke" visible="p.visible"
@@ -435,7 +437,7 @@
 </div>
 </div>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-<script src="http://maps.googleapis.com/maps/api/js?libraries=weather,geometry,visualization&sensor=false&language=en&v=3.14"></script>
+<script src="http://maps.googleapis.com/maps/api/js?libraries=weather,geometry,visualization&sensor=false&language=en&v=3.16"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>
 <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.min.js" type="text/javascript"></script>

@@ -69,7 +69,7 @@ angular.module("google-maps")
             return
 
         # Wrap polygon initialization inside a $timeout() call to make sure the map is created already
-        $timeout ->
+        mapCtrl.getScope().deferred.promise.then (map) =>
             buildOpts = (pathPoints) ->
                 opts = angular.extend({}, DEFAULTS,
                     map: map
@@ -98,7 +98,6 @@ angular.module("google-maps")
                 opts.editable = false if opts.static
                 opts
             
-            map = mapCtrl.getMap()
             pathPoints = GmapUtil.convertPathPoints(scope.path)
             polygon = new google.maps.Polygon(buildOpts(pathPoints))
             # The fit attribute is undocumented as it currently does not
@@ -157,9 +156,8 @@ angular.module("google-maps")
             # To properly support the undocumented fit attribute,
             # array-sync needs to be upgraded to support an optional pathChanged callback
             # function that is called with the path points whenever they have been changed.            
-            arraySyncer = arraySync(polygon.getPath(), scope, "path", (pathPoints) ->
+            arraySyncer = arraySync polygon.getPath(), scope, "path", (pathPoints) ->
               GmapUtil.extendMapBounds map, pathPoints  if scope.fit
-            )
 
             # Remove polygon on scope $destroy
             scope.$on "$destroy", ->
