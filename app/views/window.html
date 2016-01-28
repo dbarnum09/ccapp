@@ -1,18 +1,11 @@
-<div class="row">
-    <div class="col-xs-12">
-        <div class="row">
-            <div class="col-xs-12">
-                <img ng-repeat="ic in model.icon" class="cc-logo" ng-src="{{ic}}"><img>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-xs-12">
-                <h6 class="h6">Year: {{model.year}}</h6>
-                <h6 class="h6">Site Name: {{model.siteName}}</h6>
-                <h6 class="h6" ng-show="model.siteNumber >0">Site Number: {{model.siteNumber}}</h6>
-                <a href="{{model.fbLink}}" target="_blank">Photos</a>
-            </div>
-        </div>
-
-    </div>
+<div>
+  <div>
+    <img ng-repeat="ic in model.icon" class="cc-logo" ng-src="{{ic}}"><img>
+  </div>
+  <div>
+    <h6 class="h6">Year: {{model.year}}</h6>
+    <h6 class="h6">Site Name: {{model.siteName}}</h6>
+    <h6 class="h6" ng-show="model.siteNumber >0">Site Number: {{model.siteNumber}}</h6>
+    <a href="{{model.fbLink}}" target="_blank">Photos</a>
+  </div>
 </div>
