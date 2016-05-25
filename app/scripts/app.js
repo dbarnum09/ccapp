@@ -5,5 +5,6 @@ angular
     'ngCookies',
     'ngResource',
     'ngSanitize',
+    'weather.service',
     'google-maps'
   ]);
