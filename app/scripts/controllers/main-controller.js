@@ -1,7 +1,6 @@
 'use strict';
 
-angular.module('ccappApp')
-    .controller('MainCtrl', function ($scope,$http,$log,Noaa) {
+angular.module('ccappApp').controller('MainCtrl', function ($scope,$http,$log,Noaa) {
         $scope.mapdata = {sites:[]};
 
         var onPinClick = function() {
@@ -23,6 +22,8 @@ angular.module('ccappApp')
             },
             zoom: 5
         };
+
+
         $http.get('data/ccdata.json').success(function(data) {
 
             angular.forEach(data,function(s) {
