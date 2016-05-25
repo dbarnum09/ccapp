@@ -188,5 +188,17 @@
       "images/2014.jpg"
     ],
     "fbLink": "https://www.facebook.com/media/set/?set\u003doa.568656056580504\u0026type\u003d1"
+  },
+  {
+    "year": "2015",
+    "siteName": "Woodstock",
+    "siteNumber": "0",
+    "latitude": "42.023709",
+    "longitude": "-74.135156",
+    "icon": [
+      "images/2015.png",
+      "images/2015-1.png"
+    ],
+    "fbLink": null
   }
 ]
