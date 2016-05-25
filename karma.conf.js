@@ -16,6 +16,8 @@ function listFiles() {
     devDependencies: true
   });
 
+
+
   var patterns = wiredep(wiredepOptions).js
     .concat([
       path.join(conf.paths.src, '/app/**/*.module.js'),
@@ -36,6 +38,7 @@ function listFiles() {
     served: true,
     watched: false
   });
+  console.log(files);
   return files;
 }
 

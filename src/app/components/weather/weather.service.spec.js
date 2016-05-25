@@ -32,8 +32,16 @@ describe('WeatherService', function () {
   });
 
   describe('getHistory',function() {
-    it ('should return a data object given a location and a date',function () {
+    beforeEach(function(){
+      var expectedURL = 'http://api.wunderground.com/api/'+WeatherServiceConstants.KEY + '/history/q/0,0.json';
+      $httpBackend.expectGET(expectedURL).respond({});
+    });
 
+    it ('should return a data object given a location and a date',function () {
+      var historyHandler = jasmine.createSpy('historyHandler');
+      WeatherService.getHistory(0,0).then(historyHandler);
+      $httpBackend.flush();
+      expect(historyHandler).toHaveBeenCalled();
     });
   });
 
