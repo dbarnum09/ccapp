@@ -6,34 +6,54 @@
     .controller('MainController', MainController);
 
   /** @ngInject */
-  function MainController($timeout, webDevTec, toastr) {
+  MainController.$inject= ['$scope','$http','uiGmapGoogleMapApi','$log'];
+  function MainController($scope,$http,uiGmapGoogleMapApi,$log) {
     var vm = this;
+    // var onPinClick = function() {
+    //   var me = this;
+    //   $scope.$apply(me.model.showwindow = true);
+    // }
 
-    vm.awesomeThings = [];
-    vm.classAnimation = '';
-    vm.creationDate = 1464185311073;
-    vm.showToastr = showToastr;
-
-    activate();
-
-    function activate() {
-      getWebDevTec();
-      $timeout(function() {
-        vm.classAnimation = 'rubberBand';
-      }, 4000);
+    var onInfoWindowClosed = function() {
+      var me = this;
+      $scope.$apply(me.model.showwindow = false);
+      InfoBox.prototype.close();
     }
 
-    function showToastr() {
-      toastr.info('Fork <a href="https://github.com/Swiip/generator-gulp-angular" target="_blank"><b>generator-gulp-angular</b></a>');
-      vm.classAnimation = '';
-    }
 
-    function getWebDevTec() {
-      vm.awesomeThings = webDevTec.getTec();
+    vm.map = {
+      center: {
+        latitude: 37.898184,
+        longitude: -80.051124
+      },
+      zoom: 5
+    };
 
-      angular.forEach(vm.awesomeThings, function(awesomeThing) {
-        awesomeThing.rank = Math.random();
+
+    uiGmapGoogleMapApi.then(function(maps){
+      $http.get('data/ccdata.json').success(function(data) {
+
+        angular.forEach(data,function(s) {
+          var point = {
+            showwindow:false,
+            coords:{
+              latitude: s.latitude,
+              longitude: s.longitude
+            },
+            template:'views/window.html',
+            onPinClick:onPinClick,
+            onInfoWindowClosed:onInfoWindowClosed
+
+          };
+          angular.extend(s,point);
+        });
+        $scope.mapdata.sites = data;
       });
+    });
+
+    $scope.onClickClose = function(event) {
+      $log.log('onClickClose()');
     }
-  }
+
+    }
 })();

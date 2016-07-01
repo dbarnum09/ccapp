@@ -19,6 +19,7 @@
        url(../../bower_components/material-design-iconfont/iconfont/MaterialIcons-Regular.ttf) format('truetype');
 }
 
+
 .material-icons {
   font-family: 'Material Icons';
   font-weight: normal;
@@ -88,6 +89,10 @@ section.jumbotron {
       width: 100px;
     }
   }
+}
+
+.angular-google-map-container {
+  height: 500px;
 }
 
 /**

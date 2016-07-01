@@ -2,6 +2,6 @@
   'use strict';
 
   angular
-    .module('ccapp', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'ngMessages', 'ngAria', 'ui.router', 'ngMaterial', 'toastr']);
+    .module('ccapp', ['ngAnimate', 'ngCookies','ngSanitize', 'ngMessages', 'ngAria', 'ui.router', 'ngMaterial', 'uiGmapgoogle-maps']);
 
 })();
