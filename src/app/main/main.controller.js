@@ -41,7 +41,7 @@
               latitude: s.latitude,
               longitude: s.longitude
             },
-            template:'main/window.html',
+            template:'app/main/window.html',
             onPinClick:onPinClick,
             onInfoWindowClosed:onInfoWindowClosed
 
