@@ -1,12 +1,9 @@
-<div layout="vertical" layout-fill>
-
+<div>
   <!--<md-content>-->
-    <ui-gmap-google-map center="main.map.center" pan="true" draggable="true" zoom="main.map.zoom" >
-      <!--<markers models="mapdata.sites" idKey="'year'" coords="'coords'" labelContent="'siteName'" click="'onPinClick'">-->
-        <!--<windows ng-cloak  show="'showwindow'" isIconVisibleOnClick="true" closeClick="'onInfoWindowClosed'" templateUrl="'template'">-->
-        <!--</windows>-->
-      <!--</markers>-->
+    <ui-gmap-google-map center="vm.map.center" pan="true" draggable="true" zoom="vm.map.zoom" >
+      <ui-gmap-markers models="vm.mapdata.sites" idKey="'year'" coords="'coords'" labelContent="'siteName'" click="'onPinClick'">
+        <windows ng-cloak  show="'showwindow'" isIconVisibleOnClick="true" closeClick="'onInfoWindowClosed'" templateUrl="'template'">
+        </windows>
+      </ui-gmap-markers>
     </ui-gmap-google-map>
-  </md-content>
-
 </div>

@@ -9,10 +9,11 @@
   MainController.$inject= ['$scope','$http','uiGmapGoogleMapApi','$log'];
   function MainController($scope,$http,uiGmapGoogleMapApi,$log) {
     var vm = this;
-    // var onPinClick = function() {
-    //   var me = this;
-    //   $scope.$apply(me.model.showwindow = true);
-    // }
+    vm.mapdata = {sites:[]};
+    var onPinClick = function() {
+      var me = this;
+      $scope.$apply(vm.model.showwindow = true);
+    }
 
     var onInfoWindowClosed = function() {
       var me = this;
@@ -40,14 +41,14 @@
               latitude: s.latitude,
               longitude: s.longitude
             },
-            template:'views/window.html',
+            template:'main/window.html',
             onPinClick:onPinClick,
             onInfoWindowClosed:onInfoWindowClosed
 
           };
           angular.extend(s,point);
         });
-        $scope.mapdata.sites = data;
+        vm.mapdata.sites = data;
       });
     });
 
